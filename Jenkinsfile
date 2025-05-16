@@ -16,15 +16,15 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('JenkinsTest') {
-                    bat 'dotnet build JenkinsTest.csproj'
+                dir('JenkinTest') {
+                    bat 'dotnet build JenkinTest.csproj'
                 }
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                bat "docker build -t %IMAGE_NAME% -f JenkinsTest/Dockerfile JenkinsTest"
+                bat "docker build -t %IMAGE_NAME% -f JenkinTest/Dockerfile JenkinTest"
             }
         }
 
