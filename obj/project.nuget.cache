@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NVV5vLe3ic4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vaish\\source\\repos\\JenkinTest\\JenkinTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vaish\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
