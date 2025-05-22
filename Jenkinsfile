@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                bat "docker build -t %IMAGE_NAME% -f JenkinTest/Dockerfile JenkinTest"
+                bat "docker build -t %IMAGE_NAME% -f jenkins-test/Dockerfile JenkinTest"
             }
         }
 
