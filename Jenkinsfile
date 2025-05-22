@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'jenkins'
         CONTAINER_NAME = 'jenkins-container'
-        PORT_MAPPING = '8081:8081'
+        PORT_MAPPING = '8080:8081'
     }
 
     stages {
