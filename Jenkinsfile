@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                bat 'docker run -d --name jenkins-container -p 32769:32769 jenkins'
+                bat 'docker run -d --name jenkins-container -p 8083:8083 jenkins'
             }
         }
     }
