@@ -13,8 +13,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["JenkinTest.csproj", "."]
-RUN dotnet 
-restore "./JenkinTest.csproj"
+RUN dotnet restore "./JenkinTest.csproj"
 COPY . .
 WORKDIR "/src/."
 RUN dotnet build "./JenkinTest.csproj" -c $BUILD_CONFIGURATION -o /app/build
